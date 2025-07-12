@@ -20,7 +20,6 @@
     <link href="css/coloring.css" rel="stylesheet" type="text/css">
     <!-- custom-css -->
     <link href="css/swiper-custom-1.css" rel="stylesheet" type="text/css">
-    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
 
@@ -747,70 +746,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-5">
-                        <form name="bookingForm" id="booking_form" method="post" action="booking.php">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <input type="text" name="name" id="name" class="form-control"
-                                        placeholder="Your Name" required>
-                                </div>
 
-                                <div class="col-md-6">
-                                    <input type="text" name="email" id="email" class="form-control"
-                                        placeholder="Your Email" required>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div id="date" class="relative input-group date" data-date-format="mm-dd-yyyy">
-                                        <i class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-calendar"></i>
-                                        <input class="form-control" name="date" type="text">
-                                        <span class="input-group-addon"><i
-                                                class="glyphicon glyphicon-calendar"></i></span>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="relative">
-                                        <select name="time" id="time" class="form-control">
-                                            <option value="10:00">10:00</option>
-                                            <option value="11:00">11:00</option>
-                                            <option value="12:00">12:00</option>
-                                            <option value="13:00">13:00</option>
-                                            <option value="14:00">14:00</option>
-                                            <option value="15:00">15:00</option>
-                                            <option value="16:00">16:00</option>
-                                            <option value="17:00">17:00</option>
-                                            <option value="18:00">18:00</option>
-                                            <option value="19:00">19:00</option>
-                                            <option value="20:00">20:00</option>
-                                        </select>
-                                        <i class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"></i>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <textarea name="message" id="message" class="form-control h-150px"
-                                        placeholder="Submit Request" required></textarea>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="text-start">
-                                        <div id='submit'>
-                                            <input type='submit' id='send_message' value='Send Message'
-                                                class="btn-main">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <div id="success_message_col" class='success'>
-                            Your message has been sent successfully. Refresh this page if you want to send more
-                            messages.
-                        </div>
-                        <div id="error_message" class='error'>
-                            Sorry there was an error sending your form.
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -893,7 +829,6 @@
     ================================================== -->
     <script src="js/vendors.js"></script>
     <script src="js/designesia.js"></script>
-    <script src="js/validation-booking.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/custom-swiper-2.js"></script>
 
