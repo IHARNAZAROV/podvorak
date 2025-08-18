@@ -24,7 +24,7 @@
       type="text/css"
       id="bootstrap"
     />
-    <link href="css/plugins.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
     <link href="css/swiper.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!-- color scheme -->
@@ -34,6 +34,54 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Моринский Подворак",
+        "description": "Усадьба для отдыха, праздников и корпоративов. Аренда посуточно в Беларуси.",
+        "image": [
+          "https://podvorak.by/images/slider/1.webp",
+          "https://podvorak.by/images/slider/2.webp",
+          "https://podvorak.by/images/slider/3.webp"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Морино",
+          "addressRegion": "Гродненская область",
+          "addressCountry": "BY"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "53.8718018",
+          "longitude": "25.6951922"
+        },
+        "telephone": "+375445319322",
+        "url": "https://podvorak.by",
+        "priceRange": "BYN",
+        "openingHours": "Mo-Su 08:00-22:59",
+        "sameAs": ["https://www.instagram.com/morinski_podvorak"],
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Банкетный зал",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Баня",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Жильё для гостей",
+            "value": true
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -105,9 +153,7 @@
                   </div>
 
                   <div class="de-flex-col">
-                    <a
-                      class="btn-main fx-slide w-100"
-                      href="tel:+375445319322"
+                    <a class="btn-main fx-slide w-100" href="tel:+375445319322"
                       ><span>+375 44 5319322</span></a
                     >
 
@@ -235,7 +281,7 @@
                   и все условия для комфортного отдыха и незабываемых событий.
                 </p>
 
-                <a class="btn-main fx-slide" href="callto:+375445319322"
+                <a class="btn-main fx-slide" href="tel:+375445319322"
                   ><span>+375 44 5319322</span></a
                 >
               </div>
@@ -465,7 +511,6 @@
 
                       <div class="col-lg-8">
                         <div class="relative">
-
                           <img
                             src="images/discover-rooms/4.webp"
                             class="w-100 rounded-1"
@@ -907,9 +952,8 @@
               </div>
             </div>
           </div>
-</div>
-          <div class="spacer-double"></div>
-
+        </div>
+        <div class="spacer-double"></div>
       </section>
 
       <section>
@@ -1140,7 +1184,7 @@
     ================================================== -->
     <script src="js/vendors.js"></script>
     <script src="js/designesia.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/custom-swiper-2.js"></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="js/custom-swiper-2.js" defer></script>
   </body>
 </html>
