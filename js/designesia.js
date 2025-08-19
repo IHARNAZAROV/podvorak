@@ -691,15 +691,7 @@ document.querySelector('header').classList.add('clone');
     jQuery("header").removeClass("has-topbar");
   }
 
-  jQuery("#dark-mode").on("click", function () {
-    if (jQuery("body").hasClass("dark-scheme")) {
-      window.location.href =
-        "https://www.designesia.com/themes/gospace/index.html";
-    } else {
-      window.location.href =
-        "https://www.designesia.com/themes/gospace/02_dark-index.html";
-    }
-  });
+ 
 
   function grid_gallery() {
     jQuery(".grid-item").each(function () {
@@ -945,20 +937,7 @@ document.querySelector('header').classList.add('clone');
           after window load
           * --------------------------------------------------*/
 
-    setTimeout(function () {
-      $("#cookieConsent").fadeIn(400);
-    }, 2000);
-    $("#closeCookieConsent, .cookieConsentOK").on("click", function () {
-      $("#cookieConsent").fadeOut(400);
-    });
-
-    $(".switch-with-title .checkbox").change(function () {
-      if (this.checked) {
-        jQuery(this).parent().parent().find(".hide-content").show();
-      } else {
-        jQuery(this).parent().parent().find(".hide-content").hide();
-      }
-    });
+ 
     custom_bg();
     menu_arrow();
     load_owl();

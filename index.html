@@ -35,6 +35,10 @@
       type="text/css"
     />
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Jost:wght@400;700&family=Marmelad&display=swap" rel="stylesheet">
+
     <!-- schema.org -->
     <script type="application/ld+json">
       {
@@ -208,10 +212,25 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div
-                  class="swiper-inner"
-                  data-bgimage="url(images/slider/1.png)"
-                >
+                <div class="swiper-inner">
+                  <picture>
+                    <!-- для мобильных экранов до 480px -->
+                    <source
+                      srcset="images/slider/1-small.png"
+                      media="(max-width: 480px)"
+                    />
+                    <!-- для планшетов и небольших ноутбуков до 960px -->
+                    <source
+                      srcset="images/slider/1-medium.png"
+                      media="(max-width: 960px)"
+                    />
+                    <!-- fallback для всего, что больше (до 1920px и выше) -->
+                    <img
+                      src="images/slider/1.png"
+                      alt="Слайд 1"
+                      class="slide-image"
+                    />
+                  </picture>
                   <div class="sw-overlay op-7"></div>
                 </div>
               </div>
@@ -1123,7 +1142,7 @@
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 mb-sm-30">
             <div class="d-flex justify-content-center">
-              <i class="fs-60 id-color icon_phone"></i>
+              <i class="fs-60 id-color fa-solid fa-phone"></i>
               <div class="ms-3">
                 <h4 class="mb-0">Позвоните нам</h4>
                 <p>Телефон: +375 44 5319322</p>
@@ -1133,7 +1152,7 @@
 
           <div class="col-lg-4 col-md-6 mb-sm-30">
             <div class="d-flex justify-content-center">
-              <i class="fs-60 id-color icon_clock"></i>
+              <i class="fs-60 id-color fa-solid fa-clock"></i>
               <div class="ms-3">
                 <h4 class="mb-0">Время работы</h4>
                 <p>Ежедневно 08:00 - 20:00</p>
@@ -1143,7 +1162,7 @@
 
           <div class="col-lg-4 col-md-6 mb-sm-30">
             <div class="d-flex justify-content-center">
-              <i class="fs-60 id-color social_instagram"></i>
+              <i class="fs-60 id-color fa-brands fa-instagram"></i>
               <div class="ms-3">
                 <h4 class="mb-0">Наш инстаграм</h4>
                 <p>@morinskiy_podvorak</p>
