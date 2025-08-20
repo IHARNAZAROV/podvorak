@@ -35,9 +35,12 @@
       type="text/css"
     />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Jost:wght@400;700&family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Jost:wght@400;700&family=Marmelad&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- schema.org -->
     <script type="application/ld+json">
@@ -216,17 +219,17 @@
                   <picture>
                     <!-- для мобильных экранов до 480px -->
                     <source
-                      srcset="images/slider/1-small.png"
+                      srcset="images/slider/1-small.webp"
                       media="(max-width: 480px)"
                     />
                     <!-- для планшетов и небольших ноутбуков до 960px -->
                     <source
-                      srcset="images/slider/1-medium.png"
+                      srcset="images/slider/1-medium.webp"
                       media="(max-width: 960px)"
                     />
                     <!-- fallback для всего, что больше (до 1920px и выше) -->
                     <img
-                      src="images/slider/1.png"
+                      src="images/slider/1.webp"
                       alt="Слайд 1"
                       class="slide-image"
                     />
@@ -239,17 +242,32 @@
               <div class="swiper-slide">
                 <div
                   class="swiper-inner"
-                  data-bgimage="url(images/slider/2.png)"
+                  data-bgimage="url(images/slider/2.webp)"
                 >
                   <div class="sw-overlay op-7"></div>
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <div
-                  class="swiper-inner"
-                  data-bgimage="url(images/slider/3.png)"
-                >
+                <div class="swiper-inner">
+                  <picture>
+                    <!-- для мобильных экранов до 480px -->
+                    <source
+                      srcset="images/slider/3-small.webp"
+                      media="(max-width: 480px)"
+                    />
+                    <!-- для планшетов и небольших ноутбуков до 960px -->
+                    <source
+                      srcset="images/slider/3-medium.webp"
+                      media="(max-width: 960px)"
+                    />
+                    <!-- fallback для всего, что больше (до 1920px и выше) -->
+                    <img
+                      src="images/slider/3.webp"
+                      alt="Слайд 3"
+                      class="slide-image"
+                    />
+                  </picture>
                   <div class="sw-overlay op-7"></div>
                 </div>
               </div>
