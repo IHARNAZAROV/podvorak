@@ -1045,6 +1045,9 @@ $(function() {
 });
   });
 
+
+
+
   $(window).on("load", function () {
     jQuery("#de-loader").fadeOut(500);
     filter_gallery();
@@ -1058,4 +1061,25 @@ $(function() {
     });
     grid_gallery();
   });
+
+/* --------------------------------------------------
+ * close mobile menu on link tap/click (mobile only)
+ * --------------------------------------------------*/
+(function () {
+  function closeMobileMenu() {
+    jQuery("header").removeClass("menu-open").css("height", "auto");
+    jQuery("#menu-btn").removeClass("menu-open");
+    if (typeof mobile_menu_show !== "undefined") {
+      mobile_menu_show = 0;
+    }
+  }
+
+
+  jQuery(document).on("click touchstart", "header.header-mobile #mainmenu a", function () {
+    if (jQuery("header").hasClass("menu-open")) {
+      closeMobileMenu();
+    }
+  });
+})();
+
 })(jQuery);
