@@ -165,6 +165,7 @@ Table of content:
 /* base color */
 .id-color {
   color: var(--primary-color);
+  font-size: 1.8em;
 }
 .rounded-1 {
   border-radius: var(--rounded-1) !important;
