@@ -826,7 +826,7 @@ document.querySelector('header').classList.add('clone');
 
     $(".d-item").slice(0, 8).show();
     $("#loadmore").on("click", function (e) {
-      e.preventDefault();
+     
       $(".d-item:hidden").slice(0, 4).slideDown();
       if ($(".d-item:hidden").length === 0) {
         //$("#loadmore").text("No Content").addClass("noContent");
@@ -888,7 +888,7 @@ document.querySelector('header').classList.add('clone');
     });
     jQuery("a.btn").on("click", function (evn) {
       if (this.href.indexOf("#") === -1) {
-        evn.preventDefault();
+        
         jQuery("html,body").scrollTo(this.hash, this.hash);
       }
     });
@@ -1075,11 +1075,19 @@ $(function() {
   }
 
 
-  jQuery(document).on("click touchstart", "header.header-mobile #mainmenu a", function () {
-    if (jQuery("header").hasClass("menu-open")) {
+jQuery(document).on("click touchstart", "header.header-mobile #mainmenu a", function (e) {
+  if (jQuery("header").hasClass("menu-open")) {
+    var href = jQuery(this).attr("href");
+    // Если это якорная ссылка (начинается с #)
+    if (href && href.startsWith("#")) {
+      // Дать браузеру перейти к якорю, потом закрыть меню
+      setTimeout(closeMobileMenu, 350);
+    } else {
+      // Обычная ссылка — закрыть сразу
       closeMobileMenu();
     }
-  });
+  }
+});
 })();
 
 })(jQuery);

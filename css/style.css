@@ -184,7 +184,6 @@ html {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
-  height: 100%;
 }
 
 body {
@@ -196,11 +195,7 @@ body {
   padding: 0;
   line-height: 1.8em;
   word-spacing: 0px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
 }
-
 a,
 a:hover {
   color: var(--body-font-color);
@@ -12237,4 +12232,20 @@ img {
       background-attachment: scroll;
     }
   }
+}
+
+/* --- Footer Fix --- */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+/* --- End of Footer Fix --- */
+
+header.menu-open #mainmenu {
+  display: block;
 }
